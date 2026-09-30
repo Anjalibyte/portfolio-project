@@ -1,0 +1,186 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <title>Hallbooking- Organizer Dashboard</title>
+
+    <link rel="stylesheet" href="organizer.css">
+</head>
+
+<body>
+
+    <!-- Sidebar -->
+
+    <aside class="sidebar">
+
+        <div class="logo">
+            HallEase
+        </div>
+
+        <p class="role">
+            Event Organizer
+        </p>
+
+        <nav>
+
+            <a href="#dashboard">Dashboard</a>
+
+            <a href="#create-event">Create Event</a>
+
+            <a href="#my-events">My Events</a>
+
+            <a href="#status">Booking Status</a>
+
+        </nav>
+
+        <button class="logout-btn" onclick="logout()">
+            Logout
+        </button>
+
+    </aside>
+
+
+    <!-- Main Content -->
+
+    <main class="main-content">
+
+        <!-- Header -->
+
+        <header class="top-header">
+
+            <div>
+                <h1>Organizer Dashboard</h1>
+                <p>Manage your campus events and bookings.</p>
+            </div>
+
+            <div class="user-info">
+                Event Organizer
+            </div>
+
+        </header>
+
+
+        <!-- Dashboard -->
+
+        <section id="dashboard">
+
+            <h2>Overview</h2>
+
+            <div class="stats">
+
+                <div class="stat-card">
+                    <h3>My Events</h3>
+                    <p>5</p>
+                </div>
+
+                <div class="stat-card">
+                    <h3>Approved</h3>
+                    <p>3</p>
+                </div>
+
+                <div class="stat-card">
+                    <h3>Pending</h3>
+                    <p>1</p>
+                </div>
+
+                <div class="stat-card">
+                    <h3>Conflicts</h3>
+                    <p>1</p>
+                </div>
+
+            </div>
+
+        </section>
+
+
+        <!-- Create Event -->
+
+        <section id="create-event" class="card">
+
+            <h2>Create New Event</h2>
+
+            <p class="section-description">
+                Enter your event requirements to check availability.
+            </p>
+
+
+            <form id="eventForm">
+
+                <div class="form-group">
+
+                    <label for="eventName">
+                        Event Name
+                    </label>
+
+                    <input
+                        type="text"
+                        id="eventName"
+                        placeholder="Example: Technical Seminar"
+                        required
+                    >
+
+                </div>
+
+
+                <div class="form-group">
+
+                    <label for="eventType">
+                        Event Type
+                    </label>
+
+                    <select id="eventType" required>
+
+                        <option value="">
+                            Select event type
+                        </option>
+
+                        <option value="seminar">
+                            Seminar
+                        </option>
+
+                        <option value="workshop">
+                            Workshop
+                        </option>
+
+                        <option value="hackathon">
+                            Hackathon
+                        </option>
+
+                        <option value="cultural">
+                            Cultural Event
+                        </option>
+
+                        <option value="meeting">
+                            Meeting
+                        </option>
+
+                    </select>
+
+                </div>
+
+
+                <div class="form-group">
+
+                    <label for="participants">
+                        Number of Participants
+                    </label>
+
+                    <input
+                        type="number"
+                        id="participants"
+                        placeholder="Example: 300"
+                        min="1"
+                        required
+                    >
+
+                </div>
+
+
+                <div class="form-row">
+
+                    <div class="form-group">
+
+                        <label for=

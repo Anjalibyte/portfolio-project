@@ -1,0 +1,224 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+
+/* Page */
+
+body {
+    font-family: Arial, sans-serif;
+    background: #f4f7fb;
+    min-height: 100vh;
+
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+
+/* Main Container */
+
+.login-container {
+    width: 900px;
+    min-height: 550px;
+
+    display: flex;
+
+    background: white;
+
+    border-radius: 15px;
+
+    overflow: hidden;
+
+    box-shadow: 0 10px 30px rgba(0, 0, 0, 0.12);
+}
+
+
+/* Left Section */
+
+.welcome-section {
+    width: 50%;
+
+    background: #1769aa;
+
+    color: white;
+
+    padding: 70px 45px;
+
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+
+
+.welcome-section h1 {
+    font-size: 42px;
+    margin-bottom: 20px;
+}
+
+
+.welcome-section h2 {
+    font-size: 24px;
+    margin-bottom: 20px;
+
+    line-height: 1.4;
+}
+
+
+.welcome-section p {
+    font-size: 16px;
+
+    line-height: 1.7;
+
+    opacity: 0.95;
+}
+
+
+/* Right Section */
+
+.login-section {
+    width: 50%;
+
+    padding: 60px 50px;
+
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+
+
+.login-section h2 {
+    font-size: 30px;
+
+    color: #222;
+
+    margin-bottom: 8px;
+}
+
+
+.login-text {
+    color: #777;
+
+    margin-bottom: 30px;
+}
+
+
+/* Form */
+
+form {
+    display: flex;
+    flex-direction: column;
+}
+
+
+/* Labels */
+
+label {
+    font-size: 14px;
+
+    font-weight: bold;
+
+    margin-bottom: 7px;
+
+    color: #333;
+}
+
+
+/* Input and Select */
+
+input,
+select {
+    width: 100%;
+
+    padding: 13px;
+
+    margin-bottom: 20px;
+
+    border: 1px solid #ccc;
+
+    border-radius: 7px;
+
+    font-size: 15px;
+
+    outline: none;
+}
+
+
+/* Focus */
+
+input:focus,
+select:focus {
+    border-color: #1769aa;
+}
+
+
+/* Login Button */
+
+button {
+    padding: 13px;
+
+    border: none;
+
+    border-radius: 7px;
+
+    background: #1769aa;
+
+    color: white;
+
+    font-size: 16px;
+
+    font-weight: bold;
+
+    cursor: pointer;
+
+    margin-top: 5px;
+}
+
+
+button:hover {
+    background: #125589;
+}
+
+
+/* Message */
+
+#message {
+    margin-top: 20px;
+
+    text-align: center;
+
+    font-size: 14px;
+
+    font-weight: bold;
+}
+
+
+/* Mobile */
+
+@media (max-width: 768px) {
+
+    .login-container {
+        width: 90%;
+
+        flex-direction: column;
+    }
+
+
+    .welcome-section,
+    .login-section {
+        width: 100%;
+    }
+
+
+    .welcome-section {
+        padding: 40px 30px;
+    }
+
+
+    .login-section {
+        padding: 40px 30px;
+    }
+
+}
